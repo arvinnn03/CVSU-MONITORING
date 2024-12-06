@@ -1,0 +1,37 @@
+.signup-form {
+    background-image: url('{{ asset('images/background.jpg') }}'); /* Path to your background image */
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 0; /* Remove padding */
+}
+
+.card {
+    background-color: #fff; /* White background for the card */
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+.card-header {
+    background-color: #205c04;
+    color: white;
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.btn-success {
+        background-color: #205c04; /* Green color for the button */
+        border: none; /* Removes border */
+        border-radius: 5px; /* Rounds corners of the button */
+        font-weight: bold; /* Makes button text bold */
+    }
+
+.btn-success:hover {
+        background-color: ##FFFFFF;
+}

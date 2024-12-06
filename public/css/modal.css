@@ -1,0 +1,45 @@
+/* Custom background color for success */
+.bg-success-custom {
+    background-color: rgba(48, 164, 68, 0.8) !important; /* Green background with transparency */}
+   
+   /* Custom background color for alert */
+   .bg-alert-custom {
+       background-color: rgba(163, 48, 48, 0.8) !important; /* Red background with transparency */
+   }
+   
+   /* Modal content styling */
+   #statusUpdateModal .modal-content {
+       background-color: #30a444; /* Default Green background */
+       color: #fff; /* White text for contrast */
+       border: none; /* Remove default border */
+       border-radius: 8px; /* Rounded corners for modern look */
+       padding: 20px; /* Padding inside the modal */
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+   }
+   
+   /* Modal body padding and text alignment */
+   #statusUpdateModal .modal-body {
+       padding: 2rem; /* Ensure consistent padding */
+       text-align: center; /* Center text */
+   }
+   
+   /* Status message styling */
+   #statusMessage {
+       font-weight: bold; /* Bold text */
+       color: #fff; /* White text for better readability */
+       margin-top: 1rem; /* Margin for spacing */
+   }
+   
+   /* Icon styling */
+   #statusUpdateModal .bi-check-circle,
+   #statusUpdateModal .bi-x-circle {
+       animation: scale-in 0.3s ease-out;
+       color: #fff; /* Ensure icon color matches text color */
+   }
+   
+   /* Animation keyframes */
+   @keyframes scale-in {
+       100% { transform: scale(1); opacity: 1; }
+       100% { transform: scale(1); opacity: 1; }
+   }
+   

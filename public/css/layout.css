@@ -1,0 +1,198 @@
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.green-bg {
+  background-color: #28a745; /* Change to any specific green color code if needed */
+}
+
+.sidebar.sticky {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #333;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #28a745;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.nav-link.active {
+  color: #205c04;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  font-size: inherit; /* Add this line */
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    left: -250px;
+    width: 250px;
+  }
+
+  .sidebar.show {
+    left: 0;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  /* Add this to ensure consistent font size on mobile */
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/* Additional Styling for Sidebar Menu */
+.sidebar .nav-item {
+  margin-bottom: 1rem;
+}
+
+.sidebar .nav-link .fas {
+  margin-right: 10px;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.logo {
+  height: 40px; /* Adjust height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  margin-left: auto; /* Align the user greeting to the right */
+}
+
+/* Style for the logo */
+.logo-main {
+  height: 50px; /* Adjust as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Flexbox styling for the container */
+.d-flex {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Adjust spacing between the logo and heading */
+.h2 {
+  margin-left: 10px; /* Adjust spacing between logo and heading */
+}
+
+#sidebarMenu {
+  padding-top: 20px; /* Space from the top */
+  padding-bottom: 20px; /* Space from the bottom */
+}
+
+.nav-item {
+  margin-bottom: 10px; /* Space between menu items */
+}
+
+.nav-link.active {
+  background-color: #e9ecef; /* Highlight active link */
+  border-radius: 5px; /* Rounded corners for active link */
+}
+
+/* Card Styles */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between cards */
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.card:hover .card-body {
+  opacity: 0.9;
+}
+
+.card:hover .card-footer {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card:hover .card-footer a {
+  color: #30b55d;
+  font-weight: bold;
+}
